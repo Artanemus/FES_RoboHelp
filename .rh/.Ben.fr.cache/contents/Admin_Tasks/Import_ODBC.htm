@@ -1,0 +1,38 @@
+
+  How to 'version-up' the Access front-end.
+  Why do we need to relink?
+  Each site running FES have their own unique ODBC.dsn setup. With each new FES_v###.accdb file, sent to you by the developer, you need to re-link to match your site's configuration.
+   
+  Overview to relinking.
+  
+    Shift-Click to open new  FES_v###.accdb version.
+    Delete all the dbo_tables.
+    Select all the dbo-tables in the ODBC database and re-link
+  
+  Step-by-step guide
+  Select the new FES_v###.accdb version in explorer.
+  Hold down the shift key and double click the file.
+  Keep holding the shift key and wait for Access to fully load the file.
+  Then release the shift key.
+  In the Object view (located on the left side of the Access window), expand the table tab.
+  Select all the tables that have the prefix dbo_
+  Press delete. All the tables are removed from the tables tab.
+  Location in the tab menu bar the 'EXTERNAL DATA' tabsheet.
+  Locate the Import & Link section of the tabsheet.
+  Click ODBC Database.
+  IMPORTANT - select the option to LINK-TO tables.
+  Select all the tables that start with dbo_
+  Click OK
+  (The version shown here is Access 2019 - in Access 365 what's displayed will appear different. You may have to click multi-times for each dbo_table)
+  The ODBC tables appear in the Object View. They all appear with the LINK  icon prefix.
+   
+   
+   
+   
+  Ensure no tables remain in the 
+  
+   
+   
+   
+   
+

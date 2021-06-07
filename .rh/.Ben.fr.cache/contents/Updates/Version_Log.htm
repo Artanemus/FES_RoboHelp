@@ -1,0 +1,51 @@
+
+   
+  Changes made for each FES .accdb version
+  FES_v131.accdb
+  
+    Release
+  
+   
+  FES_v132.accdb
+  
+    FIXED NULL err re: db0_Customer.MYOBID.  CREATED NEW SQL script - 003_ALTER_dbo_Customer_MYOBID.sql created.
+    REMOVED new equipment launch warning from switch board on empty dbo_Equipment table.
+    REMOVED new site launch warning from switch board on empty dbo_Site table.
+    REMOVED new HR launch warning from switch board on empty dbo_HR table.
+    REMOVED new customer launch warning from switch board on empty dbo_Customer table.
+    REMOVED new survey launch warning from switch board on empty dbo_Survey table.
+    REDUCED the page height of the Equipment form. Accomodates low DPI monitors
+    REMOVE uwanted underlines on Equipment form.
+    FIXED tabstop on Equipment form - IsArchived is omitted
+    FIXED tabstops on HR details tabsheet - IsArchived is omitted
+    FIXED tabstops on HR Address form - IsArchived is omitted
+    FIXED tabstop on Customer Contact Details  - IsArchived is omitted
+    FIXED tabstop on SF_HR_Email - IsArchived is omitted
+    FIXED missing Master-Child relationship in _Customer with SF_Cust_Email
+    RENAMED SF_Cust_Email - name property to match object property
+    RENAMED SF_Cust_Address - name property to match object property
+    TODO Display archived addresses in _Customer
+    TODO Display archived business numbers. in _Customer
+    TODO Display archived Emails in _Customer
+    MOVED ALL CreatedOn assignment too Form_BeforeInsert procedure. This averts exception error when user jumps from an record that is in edit mode to the SUBURB or POSTCODE buttons.
+    DISABLED / REMOVED field IsArchived from qryCustomer. When re-editing record the ERR: 'Table being edited by another user!' Needs more exploration as to why this is happening.
+    CREATED NEW SQL script to assign default value in dbo.Customer.IsArchived.
+    MOVED BeforeUpdate code from 'Site-Station Equipment' and 'Site-Station Lights' ComboBoxes to form BeforeUpdate - to facilitate easier data entry in column mode.
+    CHANGES made in site-Equipment and site-Lights to improve UI editing experience.
+    FIX exception error for 'cmdNav_ToggleFilter' on new record.
+    TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.
+    AUTO-BUILD button for equipment nametag
+    INCLUDED Brand into dbo.Equipment nametag auto-build for site-equipment and site-lights.
+    CREATED NEW SQL script to extend chemical type to include symbol.
+    Quickly added some useful information on Access's KeyBoard ShortCuts. Located in the System tabsheet.
+    REPLACE str(Err.Number) with CStr(Err.Number)
+    MOVED CustCode_BeforeUpdate to Form_BeforeUpdate in _Customer
+    FIX IsArchived initialization for all objects else exception error and record cannot be updated.
+  
+   
+  FES_V133.accdb
+  
+    Improved FES WinHelp (external HTML website
+    Removed SeedDate and Level options in dbo_Site. CREATE NEW SQL script.
+  
+

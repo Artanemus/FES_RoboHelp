@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <title>Link Manager</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+  <meta name="template" content="../assets/masterpages/FES_MasterPage.htt" />
+  <meta name="rh-authors" content="Ben Ambrose" />
+  <meta name="topic-comment" content="How to link your FES frontend .accdb file to the BACKEND" />
+</head>
+<body>
+  <p> </p>
+  <h4>Linking front to back.</h4>
+  <p style="border-width: 1px;border-style: none;border-color: #000000">How to link the FRONTEND FES_v###.accdb file to the BACKEND MSSQL EXPRESS database.</p>
+  <p>Make sure you have completed the steps to building your ODBC connection, else this isn&#39;t going to work!</p>
+  <h4>SHIFT double CLICK</h4>
+  <p>Open the FRONTEND FES_v###.accdb file by ...</p>
+  <ul class="Disc">
+    <li>Locate and highlight the file in MS Explorer.</li>
+    <li>How down the SHIFT key.</li>
+    <li>Keeping the SHIFT key pressed, double click the filename.</li>
+    <li>Keep the SHIFT key press and wait for the Access application to fully load the file.</li>
+    <li>When access is finished release SHIFT. </li>
+  </ul>
+  <p> </p>
+  <p>You can now see extended menus and all access objects.</p>
+  <p> </p>
+  <p><img src="../assets/images/EnableContentMsg.png" /></p>
+  <p> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000">If you see this warning message. Click &#39;Enable Content&#39;, close Access and repeat the above steps again.</p>
+  <p> </p>
+  <p>If the warning keeps reappearing you might consider adjusting the &#39;Trust Centre Options&#39; found in Access Options menu.</p>
+  <h4 style="border-width: 1px;border-style: none;border-color: #000000">NEXT</h4>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;border-width:1px;border-style:none;border-color:#000000" width="100%">
+    <colgroup>
+      <col width="100%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="border-width: 1px;border-style: none;border-color: #000000"><img src="../assets/images/LinkManger01.png" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);" /></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <ul class="Disc">
+    <li><span style="border-color:#000000;border-style:none;border-width:1px">Select the &#39;External Data&#39; tabsheet. </span></li>
+    <li><span style="border-color:#000000;border-style:none;border-width:1px">Select &#39;Linked Table Manager&#39;.</span></li>
+  </ul>
+  <p> </p>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;border-width:1px;border-style:none;border-color:#000000" width="100%">
+    <colgroup>
+      <col width="100%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="border-width: 1px;border-style: none;border-color: #000000"><span style="border-color:#000000;border-style:none;border-width:1px"><img src="../assets/images/LinkManger02.png" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);" /></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <ul class="Disc">
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"><span style="border-color:#000000;border-style:none;border-width:1px">Click &#39;Select All&#39;. </span></li>
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"><span style="border-color:#000000;border-style:none;border-width:1px"></span><span style="border-color:#000000;border-style:none;border-width:1px">Check &#39;Always prompt for new location&#39;.</span></li>
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"><span style="border-color:#000000;border-style:none;border-width:1px"></span><span style="border-color:#000000;border-style:none;border-width:1px">Press OK</span></li>
+  </ul>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;border-width:1px;border-style:none;border-color:#000000" width="100%">
+    <colgroup>
+      <col width="100%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="border-width: 1px;border-style: none;border-color: #000000"><span style="border-color:#000000;border-style:none;border-width:1px"><img src="../assets/images/LinkManger03.png" style="border-width: 1px;border-style: none;border-color: rgb(0, 0, 0)" /></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p><span style="border-bottom:undefined;border-color:#000000;border-left:undefined;border-right:undefined;border-style:none;border-top:undefined;border-width:1px;">Select the &#39;File Data Source&#39;</span></p>
+  <p><span style="border-bottom:undefined;border-color:#000000;border-left:undefined;border-right:undefined;border-style:none;border-top:undefined;border-width:1px;">Location your FES.dsn file that you created in the Windows ODBC system utility.</span></p>
+  <p><span style="border-color:#000000;border-style:none;border-width:1px">Press OK.</span></p>
+  <p> </p>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse;height:NaNpx;border-width:1px;border-style:none;border-color:#000000" width="100%">
+    <colgroup>
+      <col width="100%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="border-width: 1px;border-style: none;border-color: #000000"><span style="border-color:#000000;border-style:none;border-width:1px"><img src="../assets/images/LinkManger04.png" style="border-width: 1px;border-style: none;border-color: rgb(0, 0, 0)" /></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p><span style="border-color:#000000;border-style:none;border-width:1px">Success. Your ready to use FES</span></p>
+  <p> </p>
+  <p> </p>
+</body>
+</html>

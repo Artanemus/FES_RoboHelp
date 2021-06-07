@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <title>MSSQL Scripts</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+  <meta name="template" content="../assets/masterpages/FES_MasterPage.htt" />
+  <meta name="rh-authors" content="Ben Ambrose" />
+  <meta name="topic-comment" content="How to update the MSSQL FES database using scripts." />
+</head>
+<body>
+  <h4 style="border-width: 1px;border-style: none;border-color: #000000">Running a MSSQL Script to update your FES database.</h4>
+  <p>This section describes how to execute a SQL script to make changes to the schema of your FES database. </p>
+  <h4 style="border-width: 1px;border-style: none;border-color: #000000">Email Package V1.0.0.0</h4>
+  <p>You will recieve via email a &#39;Zipped&#39; file. Unpack this file.<span style="font-family:Segoe UI;"></span></p>
+  <p>There are two files. Each file is a SQL &#39;Script&#39;. <span style="font-family:Segoe UI;"></span></p>
+  <p> </p>
+  <p>001_CreateIDFESSchema_v1.sql</p>
+  <ul>
+    <li>The FES database must exists. </li>
+    <li>This script builds the schema for the database.</li>
+    <li>After it&#39;s executed the empty FES database will be populated by tables. </li>
+  </ul>
+  <p> </p>
+  <p>002_SystemDataIDFES_v1.sql</p>
+  <ul>
+    <li>The FES tables must exists. </li>
+    <li>This script populates the tables with esential core data.</li>
+    <li>After it&#39;s executed, some of tables will contain records.</li>
+    <li> </li>
+  </ul>
+  <p> </p>
+  <p><br />
+    Open Microsoft&#39;s SQL Server Management Studio.</p>
+  <p> </p>
+  <p><img src="../assets/images/MSSMSconnect.png" /><br />
+    Connect to the SQL EXPRESS server.</p>
+  <p> </p>
+  <p>Expand the &#39;Databases&#39; branch in the &#39;Object Explorer&#39; window (left side of application)<br />
+    <img src="../assets/images/MSSMSconnect02.png" /></p>
+  <p>Select the FES database.</p>
+  <p> </p>
+  <h5>NEXT</h5>
+  <p>Drag the file 001_CreateIDFESSchema_v1.sql onto the MSSMS desktop (big blue area)</p>
+  <p> </p>
+  <p><img src="../assets/images/MSSMSconnect03.png" /></p>
+  <p>Press the execute button.</p>
+  <p> </p>
+  <p>Once MSSMS is done running the script - you should see tables inside FES AND most importantly - no errors!</p>
+  <p><img src="../assets/images/MSSMSconnect04.png" /></p>
+  <p> </p>
+  <p><img src="../assets/images/MSSMSconnect05.png" /></p>
+  <p>Close the tab containing the 001_CreateIDFESSchema_v1.sql script.</p>
+  <p> </p>
+  <h5>NEXT </h5>
+  <p>Drag the file 002_SystemDataIDFES_v1.sql onto the MSSMS desktop (big blue area)</p>
+  <p> </p>
+  <p>Press the execute button.</p>
+  <p> </p>
+  <p>Once MSSMS is finished ...</p>
+  <p> </p>
+  <p>Close the tab containing the 001_CreateIDFESSchema_v1.sql script.</p>
+  <p> </p>
+  <h5>NEXT</h5>
+  <p>Explore the FES tables for records.</p>
+  <p> </p>
+  <p><img src="../assets/images/MSSMSconnect06.png" /></p>
+  <p>Here I right moused over the table AddressType and selected &#39;Select Top 1000 Rows&#39; from the &#39;pop-up&#39; menu.<br />
+     </p>
+  <p><img src="../assets/images/MSSMSconnect07.png" /></p>
+  <p>It produced a script which automatically ran, resulting in a table view of records in that table.</p>
+  <p> </p>
+  <h5>NEXT</h5>
+  <p>Glot in you new found knowledge and get ready for the next step - re-connecting and re-freshing the MS Access FES ACCDB</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+</body>
+</html>

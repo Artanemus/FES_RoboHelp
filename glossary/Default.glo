@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>        
+
+<glossgroup id="Default">          
+<title>Glossary Definitions</title>        
+<glossentry id="Default_FES">
+<glossterm>FES</glossterm>
+<glossdef>Fire Equipment Services</glossdef></glossentry></glossgroup>

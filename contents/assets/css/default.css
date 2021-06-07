@@ -1,0 +1,100 @@
+/*Created with Adobe RoboHelp 2019.*/
+body {
+  font-family: Segoe UI;
+  background-color: #ffffff;
+  font-size: NaNpt;
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+}
+h1 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 24pt;
+}
+h2 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 18.0pt;
+}
+h3 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 14.0pt;
+  font-family: Segoe UI;
+}
+h4 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 12.0pt;
+  background-color: #f0f0f0;
+}
+h5 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 10.0pt;
+}
+h6 {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 8.0pt;
+}
+p {
+  font-family: Segoe UI;
+  font-size: 12pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+}
+a.expandspot {
+  color: #008000;
+  cursor: hand;
+  font-style: italic;
+  text-decoration: none;
+}
+span.expandtext {
+  font-style: italic;
+  font-weight: normal;
+  color: #ff0000;
+}
+a.dropspot {
+  cursor: hand;
+  color: #008000;
+  font-style: italic;
+  text-decoration: none;
+}
+a.glossterm {
+  color: #800000;
+  cursor: hand;
+  font-style: italic;
+  text-decoration: none;
+}
+span.glosstext {
+  font-style: italic;
+  font-weight: normal;
+  color: #0000ff;
+}
+ol,
+li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Segoe UI;
+}
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Segoe UI;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Segoe UI;
+}
+ol.Decimal {
+  list-style-type: decimal;
+}
+ul.Disc {
+  list-style-type: disc;
+}
+ul.Circle {
+  list-style-type: circle;
+}

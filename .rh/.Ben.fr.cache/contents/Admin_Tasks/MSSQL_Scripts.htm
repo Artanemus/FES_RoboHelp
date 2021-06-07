@@ -1,0 +1,71 @@
+
+  Running a MSSQL Script to update your FES database.
+  This section describes how to execute a SQL script to make changes to the schema of your FES database. 
+  Email Package V1.0.0.0
+  You will recieve via email a 'Zipped' file. Unpack this file.
+  There are two files. Each file is a SQL 'Script'. 
+   
+  001_CreateIDFESSchema_v1.sql
+  
+    The FES database must exists. 
+    This script builds the schema for the database.
+    After it's executed the empty FES database will be populated by tables. 
+  
+   
+  002_SystemDataIDFES_v1.sql
+  
+    The FES tables must exists. 
+    This script populates the tables with esential core data.
+    After it's executed, some of tables will contain records.
+     
+  
+   
+  
+    Open Microsoft's SQL Server Management Studio.
+   
+  
+    Connect to the SQL EXPRESS server.
+   
+  Expand the 'Databases' branch in the 'Object Explorer' window (left side of application)
+    
+  Select the FES database.
+   
+  NEXT
+  Drag the file 001_CreateIDFESSchema_v1.sql onto the MSSMS desktop (big blue area)
+   
+  
+  Press the execute button.
+   
+  Once MSSMS is done running the script - you should see tables inside FES AND most importantly - no errors!
+  
+   
+  
+  Close the tab containing the 001_CreateIDFESSchema_v1.sql script.
+   
+  NEXT 
+  Drag the file 002_SystemDataIDFES_v1.sql onto the MSSMS desktop (big blue area)
+   
+  Press the execute button.
+   
+  Once MSSMS is finished ...
+   
+  Close the tab containing the 001_CreateIDFESSchema_v1.sql script.
+   
+  NEXT
+  Explore the FES tables for records.
+   
+  
+  Here I right moused over the table AddressType and selected 'Select Top 1000 Rows' from the 'pop-up' menu.
+     
+  
+  It produced a script which automatically ran, resulting in a table view of records in that table.
+   
+  NEXT
+  Glot in you new found knowledge and get ready for the next step - re-connecting and re-freshing the MS Access FES ACCDB
+   
+   
+   
+   
+   
+   
+

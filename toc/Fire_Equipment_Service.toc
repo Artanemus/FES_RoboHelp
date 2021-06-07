@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map type="toc">
+  <title>Table of Contents</title>
+  <book navtitle="Introduction" href="../contents/About/Introduction.htm" format="html" processing-role="normal"></book>
+  <book navtitle="Administration Tasks" href="../contents/Admin_Tasks/introSetup.htm" format="html" processing-role="normal">
+    <page navtitle="How to execute a MSSQL script" href="../contents/Admin_Tasks/MSSQL_Scripts.htm" format="html" processing-role="normal"></page>
+    <page navtitle="How to refresh tables with Link Manager" href="../contents/Admin_Tasks/Link_Manager.htm" format="html" processing-role="normal"></page>
+    <page navtitle="How to version-up the Access FES front-end.  " href="../contents/Admin_Tasks/Import_ODBC.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="Installation" format="html" processing-role="normal">
+    <page navtitle="Setting up ODBC" href="../contents/Installation/ODBC.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="System" format="html" processing-role="normal">
+    <page navtitle="Log of front-end changes" href="../contents/Updates/Version_Log.htm" format="html" processing-role="normal"></page>
+    <page navtitle="Keyboard Short-Cuts" href="../contents/System/Keyboard_Short-Cuts.htm" format="html" processing-role="normal"></page>
+  </book>
+</map>

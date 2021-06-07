@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Relink_ODBC</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+  <meta name="template" content="../assets/masterpages/FES_MasterPage.htt" />
+  <meta name="rh-authors" content="Ben Ambrose" />
+  <meta name="topic-comment" content="Import tables from an ODBC DSN" />
+</head>
+<body>
+  <h1 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">How to &#39;version-up&#39; the Access front-end.</h1>
+  <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Why do we need to relink?</h4>
+  <p style="border-width: 1px;border-style: none;border-color: #000000">Each site running FES have their own unique ODBC.dsn setup. With each new FES_v###.accdb file, sent to you by the developer, you need to re-link to match your site&#39;s configuration.</p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Overview to relinking.</h4>
+  <ul class="Circle">
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Shift-Click to open new  FES_v###.accdb version.</li>
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Delete all the dbo_tables.</li>
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Select all the dbo-tables in the ODBC database and re-link</li>
+  </ul>
+  <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Step-by-step guide</h4>
+  <p>Select the new FES_v###.accdb version in explorer.</p>
+  <p>Hold down the shift key and double click the file.</p>
+  <p>Keep holding the shift key and wait for Access to fully load the file.</p>
+  <p>Then release the shift key.</p>
+  <p>In the Object view (located on the left side of the Access window), expand the table tab.</p>
+  <p>Select all the tables that have the prefix dbo_</p>
+  <p>Press delete. All the tables are removed from the tables tab.</p>
+  <p>Location in the tab menu bar the &#39;EXTERNAL DATA&#39; tabsheet.</p>
+  <p>Locate the Import &amp; Link section of the tabsheet.</p>
+  <p>Click ODBC Database.</p>
+  <p>IMPORTANT - select the option to LINK-TO tables.</p>
+  <p>Select all the tables that start with dbo_</p>
+  <p>Click OK</p>
+  <p>(The version shown here is Access 2019 - in Access 365 what&#39;s displayed will appear different. You may have to click multi-times for each dbo_table)</p>
+  <p>The ODBC tables appear in the Object View. They all appear with the LINK  icon prefix.</p>
+  <p> </p>
+  <p style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"> </p>
+  <p style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000">Ensure no tables remain in the </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"><img align="left" height="150" src="../assets/images/ODBC01.png" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0); margin: 20px;" width="550" /></p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
+</body>
+</html>
