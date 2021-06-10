@@ -18,10 +18,24 @@
   <ul class="Circle">
     <li>Release</li>
   </ul>
+  <h4>TODO</h4>
+  <ul class="Circle">
+    <li>TODO Display archived addresses in _Customer</li>
+    <li>TODO Display archived business numbers. in _Customer</li>
+    <li>TODO Display archived Emails in _Customer</li>
+    <li>TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.</li>
+  </ul>
   <p> </p>
+  <h4>MSSQL EXPRESS 28/5/2021</h4>
+  <ul class="Circle">
+    <li>003_ALTER_dbo_Customer_MYOBID.sql BindDefault NULL to dbo.Customer.MYOB.</li>
+    <li>004_CustomerIsArchivedDefBinding.sql BindDefault False to dbo.Customer.IsArchived.</li>
+    <li>005_ChemicalType_Symbol.sql ALTER dbo.ChemicalType.Symbol </li>
+    <li>006_CustCode_NVARCHAR.sql Changed field type to NVARCHAR in dbo.Customer.CustCode. Increased field size.</li>
+  </ul>
   <h4>FES_v132.accdb</h4>
   <ul class="Circle">
-    <li>FIXED NULL err re: db0_Customer.MYOBID.  CREATED NEW SQL script - 003_ALTER_dbo_Customer_MYOBID.sql created.</li>
+    <li>FIXED NULL err re: db0_Customer.MYOBID.</li>
     <li>REMOVED new equipment launch warning from switch board on empty dbo_Equipment table.</li>
     <li>REMOVED new site launch warning from switch board on empty dbo_Site table.</li>
     <li>REMOVED new HR launch warning from switch board on empty dbo_HR table.</li>
@@ -37,29 +51,43 @@
     <li>FIXED missing Master-Child relationship in _Customer with SF_Cust_Email</li>
     <li>RENAMED SF_Cust_Email - name property to match object property</li>
     <li>RENAMED SF_Cust_Address - name property to match object property</li>
-    <li>TODO Display archived addresses in _Customer</li>
-    <li>TODO Display archived business numbers. in _Customer</li>
-    <li>TODO Display archived Emails in _Customer</li>
     <li>MOVED ALL CreatedOn assignment too Form_BeforeInsert procedure. This averts exception error when user jumps from an record that is in edit mode to the SUBURB or POSTCODE buttons.</li>
     <li>DISABLED / REMOVED field IsArchived from qryCustomer. When re-editing record the ERR: &#39;Table being edited by another user!&#39; Needs more exploration as to why this is happening.</li>
-    <li>CREATED NEW SQL script to assign default value in dbo.Customer.IsArchived.</li>
     <li>MOVED BeforeUpdate code from &#39;Site-Station Equipment&#39; and &#39;Site-Station Lights&#39; ComboBoxes to form BeforeUpdate - to facilitate easier data entry in column mode.</li>
     <li>CHANGES made in site-Equipment and site-Lights to improve UI editing experience.</li>
     <li>FIX exception error for &#39;cmdNav_ToggleFilter&#39; on new record.</li>
-    <li>TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.</li>
     <li>AUTO-BUILD button for equipment nametag</li>
     <li>INCLUDED Brand into dbo.Equipment nametag auto-build for site-equipment and site-lights.</li>
-    <li>CREATED NEW SQL script to extend chemical type to include symbol.</li>
     <li>Quickly added some useful information on Access&#39;s KeyBoard ShortCuts. Located in the System tabsheet.</li>
     <li>REPLACE str(Err.Number) with CStr(Err.Number)</li>
     <li>MOVED CustCode_BeforeUpdate to Form_BeforeUpdate in _Customer</li>
     <li>FIX IsArchived initialization for all objects else exception error and record cannot be updated.</li>
   </ul>
   <p> </p>
+  <h4>MSSQL EXPRESS 7/6/2021</h4>
+  <ul class="Circle">
+    <li>007_SeedDateAndLevelMod DROP dbo.Global.DoOffset, dbo.Global.DoRelative, dbo.Site.SeedDate, dob.Site.SeedLevel</li>
+    <li>008_CustSiteMod ALTER dbo.CustSite.SeedDate, dbo.CustSite.SeedLevel</li>
+    <li>009_CustSiteDoReseedMod ALTER dbo.Customer.DoReseed and BindDefault False</li>
+  </ul>
+  <h4>ROBOHELP</h4>
+  <ul class="Circle">
+    <li>Improve book menu layout.</li>
+    <li>New content - How to update the Access front-end FES_v###.accdb file.</li>
+    <li>New content - How to create the FES 'ODBC DSN' file.</li>
+  </ul>
   <h4>FES_V133.accdb</h4>
   <ul class="Circle">
-    <li>Improved FES WinHelp (external HTML website</li>
-    <li>Removed SeedDate and Level options in dbo_Site. CREATE NEW SQL script.</li>
+    <li>REMOVED SeedDate and SeedLevel in form dbo_Site and all references in VBA and SQL.</li>
+    <li>ADDED SeedDate and SeedLevel in form dbo.CustSite.</li>
+    <li>Re-assign DataSouce for ref. to SeedDate and SeedLevel.</li>
+    <li>Initialized all new field values when linking in CustSite.</li>
+    <li>Re-write class clsInspectOrder for SeedDate/SeedLevel changes.</li>
+    <li>Re-write CustSite Link, Disable and Enable routine - split dialogues for new customers, return customers.</li>
+    <li>Extended functionality in CTRL-DELETE CustSite routine.</li>
+    <li>Re-write multi-routines in module mdlInspect.</li>
+    <li>Re-write multi-routines in module mdlSite.</li>
+    <li></li>
   </ul>
 </body>
 </html>
