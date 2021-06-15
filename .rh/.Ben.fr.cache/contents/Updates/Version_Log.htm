@@ -1,14 +1,45 @@
 
    
   Changes made for each FES .accdb version
+  TODO
+  
+    TODO Display archived addresses in _Customer
+    TODO Display archived business numbers. in _Customer
+    TODO Display archived Emails in _Customer
+    TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.
+    TODO UI design for _InspectionOrders
+    TODO UI change to _BrowseInspectionOrder. Make grid based.
+  
+   
+  MSSQL EXPRESS RELEASE
+  
+    001_CreateIDFESSchema_v1. FES MSSQL EXPRESS database Schema
+    002_SystemDataIDFES_v1.sql FES MSSQL EXPRESS system and starter record data.
+  
+  ROBOHELP
+  
+    RELEASE. Rough introduction and outline + basic instructions for installation.
+  
   FES_v131.accdb
   
     Release
   
    
+  MSSQL EXPRESS 28/5/2021
+  
+    003_ALTER_dbo_Customer_MYOBID.sql BindDefault NULL to dbo.Customer.MYOB.
+    004_CustomerIsArchivedDefBinding.sql BindDefault False to dbo.Customer.IsArchived.
+    005_ChemicalType_Symbol.sql ALTER dbo.ChemicalType.Symbol 
+    006_CustCode_NVARCHAR.sql Changed field type to NVARCHAR in dbo.Customer.CustCode. Increased field size.
+  
+  ROBOHELP
+  
+    Improved menu layout.
+    Added screen captures for instructions on installation.
+  
   FES_v132.accdb
   
-    FIXED NULL err re: db0_Customer.MYOBID.  CREATED NEW SQL script - 003_ALTER_dbo_Customer_MYOBID.sql created.
+    FIXED NULL err re: db0_Customer.MYOBID.
     REMOVED new equipment launch warning from switch board on empty dbo_Equipment table.
     REMOVED new site launch warning from switch board on empty dbo_Site table.
     REMOVED new HR launch warning from switch board on empty dbo_HR table.
@@ -24,28 +55,47 @@
     FIXED missing Master-Child relationship in _Customer with SF_Cust_Email
     RENAMED SF_Cust_Email - name property to match object property
     RENAMED SF_Cust_Address - name property to match object property
-    TODO Display archived addresses in _Customer
-    TODO Display archived business numbers. in _Customer
-    TODO Display archived Emails in _Customer
     MOVED ALL CreatedOn assignment too Form_BeforeInsert procedure. This averts exception error when user jumps from an record that is in edit mode to the SUBURB or POSTCODE buttons.
     DISABLED / REMOVED field IsArchived from qryCustomer. When re-editing record the ERR: 'Table being edited by another user!' Needs more exploration as to why this is happening.
-    CREATED NEW SQL script to assign default value in dbo.Customer.IsArchived.
     MOVED BeforeUpdate code from 'Site-Station Equipment' and 'Site-Station Lights' ComboBoxes to form BeforeUpdate - to facilitate easier data entry in column mode.
     CHANGES made in site-Equipment and site-Lights to improve UI editing experience.
     FIX exception error for 'cmdNav_ToggleFilter' on new record.
-    TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.
     AUTO-BUILD button for equipment nametag
     INCLUDED Brand into dbo.Equipment nametag auto-build for site-equipment and site-lights.
-    CREATED NEW SQL script to extend chemical type to include symbol.
     Quickly added some useful information on Access's KeyBoard ShortCuts. Located in the System tabsheet.
     REPLACE str(Err.Number) with CStr(Err.Number)
     MOVED CustCode_BeforeUpdate to Form_BeforeUpdate in _Customer
     FIX IsArchived initialization for all objects else exception error and record cannot be updated.
   
    
+  MSSQL EXPRESS 7/6/2021
+  
+    007_SeedDateAndLevelMod DROP dbo.Global.DoOffset, dbo.Global.DoRelative, dbo.Site.SeedDate, dob.Site.SeedLevel
+    008_CustSiteMod ALTER dbo.CustSite.SeedDate, dbo.CustSite.SeedLevel
+    009_CustSiteDoReseedMod ALTER dbo.Customer.DoReseed and BindDefault False
+  
+  ROBOHELP
+  
+    Improve book menu layout.
+    New content - How to update the Access front-end a new version of the FES_v###.accdb file.
+    New content - How to create the FES 'ODBC DSN' file.
+    New Content - How to re-establish connection to MSSQL Server
+  
   FES_V133.accdb
   
-    Improved FES WinHelp (external HTML website
-    Removed SeedDate and Level options in dbo_Site. CREATE NEW SQL script.
+    REMOVED SeedDate and SeedLevel in form dbo_Site and all references in VBA and SQL.
+    ADDED SeedDate and SeedLevel in form dbo.CustSite.
+    Re-assign DataSouce for ref. to SeedDate and SeedLevel.
+    Initialized all new field values when linking in CustSite.
+    Re-write class clsInspectOrder for SeedDate/SeedLevel changes.
+    Re-write CustSite Link, Disable and Enable routine - split dialogues for new customers, return customers.
+    Extended functionality in CTRL-DELETE CustSite routine.
+    Re-write multi-routines in module mdlInspect.
+    Re-write multi-routines in module mdlSite.
+    ADDED checkbox and backe-end code to 'include archived sites' in Site Picker. + Design changes.
+    SET qryDlgPicker_SiteSF sort order to SiteID decending.
+    REDESIGNED xDlgInspect_UpdateStat
+    UPDATED SQL in _InspectionOrders AND UI re-design. (Included ID's for customer and site.)
+    ADDED checkbox to include archived sites in xDlgSitePicker
   
 

@@ -14,16 +14,28 @@
 <body>
   <p> </p>
   <h1>Changes made for each FES .accdb version</h1>
-  <h4>FES_v131.accdb</h4>
-  <ul class="Circle">
-    <li>Release</li>
-  </ul>
   <h4>TODO</h4>
   <ul class="Circle">
     <li>TODO Display archived addresses in _Customer</li>
     <li>TODO Display archived business numbers. in _Customer</li>
     <li>TODO Display archived Emails in _Customer</li>
     <li>TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.</li>
+    <li>TODO UI design for _InspectionOrders</li>
+    <li>TODO UI change to _BrowseInspectionOrder. Make grid based.</li>
+  </ul>
+  <p> </p>
+  <h4>MSSQL EXPRESS RELEASE</h4>
+  <ul class="Circle">
+    <li>001_CreateIDFESSchema_v1. FES MSSQL EXPRESS database Schema</li>
+    <li>002_SystemDataIDFES_v1.sql FES MSSQL EXPRESS system and starter record data.</li>
+  </ul>
+  <h4>ROBOHELP</h4>
+  <ul class="Circle">
+    <li>RELEASE. Rough introduction and outline + basic instructions for installation.</li>
+  </ul>
+  <h4>FES_v131.accdb</h4>
+  <ul class="Circle">
+    <li>Release</li>
   </ul>
   <p> </p>
   <h4>MSSQL EXPRESS 28/5/2021</h4>
@@ -32,6 +44,11 @@
     <li>004_CustomerIsArchivedDefBinding.sql BindDefault False to dbo.Customer.IsArchived.</li>
     <li>005_ChemicalType_Symbol.sql ALTER dbo.ChemicalType.Symbol </li>
     <li>006_CustCode_NVARCHAR.sql Changed field type to NVARCHAR in dbo.Customer.CustCode. Increased field size.</li>
+  </ul>
+  <h4>ROBOHELP</h4>
+  <ul class="Circle">
+    <li>Improved menu layout.</li>
+    <li>Added screen captures for instructions on installation.</li>
   </ul>
   <h4>FES_v132.accdb</h4>
   <ul class="Circle">
@@ -73,8 +90,9 @@
   <h4>ROBOHELP</h4>
   <ul class="Circle">
     <li>Improve book menu layout.</li>
-    <li>New content - How to update the Access front-end FES_v###.accdb file.</li>
+    <li>New content - How to update the Access front-end a new version of the FES_v###.accdb file.</li>
     <li>New content - How to create the FES 'ODBC DSN' file.</li>
+    <li>New Content - How to re-establish connection to MSSQL Server</li>
   </ul>
   <h4>FES_V133.accdb</h4>
   <ul class="Circle">
@@ -87,7 +105,17 @@
     <li>Extended functionality in CTRL-DELETE CustSite routine.</li>
     <li>Re-write multi-routines in module mdlInspect.</li>
     <li>Re-write multi-routines in module mdlSite.</li>
-    <li></li>
+    <li>ADDED checkbox and backe-end code to 'include archived sites' in Site Picker. + Design changes.</li>
+    <li>SET qryDlgPicker_SiteSF sort order to SiteID decending.</li>
+    <li>REDESIGNED xDlgInspect_UpdateStat</li>
+    <li>UPDATED SQL in _InspectionOrders AND UI re-design. (Included ID's for customer and site.)</li>
+    <li>ADDED checkbox to include archived sites in xDlgSitePicker</li>
+  </ul>
+  <p></p>
+  <h4>FES_V134.accdb</h4>
+  <ul class="Circle">
+    <li>ADDED Location to SF_InspectOrder_Equip</li>
+    <li>ADDED Location to SF_InspectOrder_Light</li>
   </ul>
 </body>
 </html>
