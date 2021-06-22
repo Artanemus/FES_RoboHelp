@@ -1,0 +1,48 @@
+
+  How to backup your SCM data.
+  It important to schedule a regular backup of the data stored in FES. You may very well keep years of historical data and it would be tragic to lose it.
+  Backup and restore of the FES database is done with Microsoft's SQL Server Management Studio (SSMS)
+  Run the application.
+  Connect to your MSSQL EXPRESS FES database.
+  
+    
+      
+    
+    
+      
+        
+          Expand Databases in the Object Explorer panel by pressing its + symbol
+           
+        
+      
+      
+        
+          Hover over FES and RIGHT-MOUSE click to show the context sensitive pop-up menu
+          Select the menu item Tasks, then select Back Up ...
+        
+      
+      
+        
+          Your back up settings should read ...
+          Database: FES (in this instance, the database has been personalized and was named IDFES or Ipswich District Fire Equipment Services.)
+            Backup type: Full
+            Back up to: Disk
+          If a backup filename isn't listed, select a backup destination. 
+          Press OK to begin the backup.
+          Note: in this example MSSMS places the backup file in the default backup directory. Typically this is : 
+            C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup
+          Your backup filename must use the extension .bak (Example: IDFES.bak)
+          Good pratice is to have three copies of your backup.
+          
+            The default location on the DB server. (For easy access.) 
+            In a safe place with-in the office or in the 'Cloud'. (In case the server dies.)
+            And an external location. (In case your office is burnt-down or the 'Cloud' goes down.)
+          
+          Depending on the amount of work done, good practise is to backup on a weekly scheduled.
+          It's possible to automate backups using a shell script. 
+        
+      
+    
+  
+  
+

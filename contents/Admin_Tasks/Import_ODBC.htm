@@ -16,36 +16,84 @@
   <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Why do we need to relink?</h4>
   <p style="border-width: 1px;border-style: none;border-color: #000000">Each site running FES have their own unique ODBC.dsn setup. With each new FES_v###.accdb file, sent to you by the developer, you need to re-link to match your site&#39;s configuration.</p>
   <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
-  <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Overview to relinking.</h4>
+  <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Overview to re-linking.</h4>
   <ul class="Circle">
     <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Shift-Click to open new  FES_v###.accdb version.</li>
     <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Delete all the dbo_tables.</li>
-    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Select all the dbo-tables in the ODBC database and re-link</li>
+    <li style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Re-link from external data - ODBC database all the dbo_tables.</li>
   </ul>
   <h4 style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);">Step-by-step guide</h4>
-  <p>Select the new FES_v###.accdb version in explorer.</p>
-  <p>Hold down the shift key and double click the file.</p>
-  <p>Keep holding the shift key and wait for Access to fully load the file.</p>
-  <p>Then release the shift key.</p>
-  <p>In the Object view (located on the left side of the Access window), expand the table tab.</p>
-  <p>Select all the tables that have the prefix dbo_</p>
-  <p>Press delete. All the tables are removed from the tables tab.</p>
-  <p>Location in the tab menu bar the &#39;EXTERNAL DATA&#39; tabsheet.</p>
-  <p>Locate the Import &amp; Link section of the tabsheet.</p>
-  <p>Click ODBC Database.</p>
-  <p>IMPORTANT - select the option to LINK-TO tables.</p>
-  <p>Select all the tables that start with dbo_</p>
-  <p>Click OK</p>
-  <p>(The version shown here is Access 2019 - in Access 365 what&#39;s displayed will appear different. You may have to click multi-times for each dbo_table)</p>
-  <p>The ODBC tables appear in the Object View. They all appear with the LINK  icon prefix.</p>
+  <ul class="Disc">
+    <li>Select the new FES_v###.accdb version in explorer.</li>
+    <li>Hold down the shift key and double click the file.</li>
+    <li>Keep holding the shift key and wait for Access to fully load the file.</li>
+    <li>Then release the shift key.</li>
+  </ul>
+  <p> </p>
+  <table class="noborderW50" style="width: 75%;">
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <li><img class="FloatLeft" src="../assets/images/RelinkODBC01.png" /></li>
+          </ul>
+          <p>In the Object view, located on the left side of the Access window, expand the table tab. </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li><img class="FloatLeft" src="../assets/images/RelinkODBC02.png" /></li>
+          </ul>
+          <p>Select all the tables that have the prefix &#39;dbo_&#39;</p>
+          <p>On the keyboard press Delete.</p>
+          <p>All the tables are removed from the tables tab.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li><img class="FloatLeft" src="../assets/images/RelinkODBC03.png" /></li>
+          </ul>
+          <p>Location in the tab menu bar the &#39;EXTERNAL DATA&#39; tabsheet.<br />
+            Locate the Import &amp; Link section of the tabsheet.</p>
+          <p>Click ODBC Database.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li><img class="FloatLeft" src="../assets/images/image.png" /></li>
+          </ul>
+          <p>IMPORTANT - select the option to LINK-TO tables.</p>
+          <p>Press OK</p>
+          <p> </p>
+          <p>In the dialogue &#39;Select Data Source&#39;, in the tabsheet &#39;File Data Source&#39;, select your FES.dsn file.</p>
+          <p> </p>
+          <p>(By default, the windows system saves this file in the USERNAME\DOCUMENTS folder.)</p>
+          <p> </p>
+          <p>Select all the tables that start with dbo_</p>
+          <p>Click OK</p>
+          <p> </p>
+          <p>Note: The version shown here is Access 2019 - in Access 365 the display may appear different</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <ul class="Disc">
+    <li>The ODBC tables appear in the Object View. They all appear with the LINK <img src="../assets/images/image1.png" /> icon prefix.</li>
+  </ul>
   <p> </p>
   <p style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"> </p>
   <p style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0);"> </p>
   <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
-  <p style="border-width: 1px;border-style: none;border-color: #000000">Ensure no tables remain in the </p>
+  <p style="border-width: 1px;border-style: none;border-color: #000000">2010-2013 External Date - menu display </p>
   <p style="border-width: 1px;border-style: none;border-color: #000000"><img align="left" height="150" src="../assets/images/ODBC01.png" style="border-width: 1px; border-style: none; border-color: rgb(0, 0, 0); margin: 20px;" width="550" /></p>
-  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
-  <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
   <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
   <p style="border-width: 1px;border-style: none;border-color: #000000"> </p>
 </body>

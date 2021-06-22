@@ -45,6 +45,12 @@ p {
   margin-top: 0pt;
   margin-bottom: 0pt;
 }
+p.BottomMargin {
+  font-family: Segoe UI;
+  font-size: 12pt;
+  margin-top: 0pt;
+  margin-bottom: 4pt;
+}
 a.expandspot {
   color: #008000;
   cursor: hand;
@@ -97,4 +103,96 @@ ul.Disc {
 }
 ul.Circle {
   list-style-type: circle;
+}
+:root {
+  --borderonly-theme-color: #bfbfbf;
+  --thickhdr-theme-color: rgba(244, 176, 131, 1);
+  --thickhdr-brdr-color: rgba(244, 176, 131, 0.5);
+}
+table.borderonly {
+  border-collapse: collapse;
+}
+table.borderonly td {
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--borderonly-theme-color);
+}
+table.thickhdr {
+  border-collapse: collapse;
+}
+table.thickhdr td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--thickhdr-brdr-color);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+table.thickhdr tr:first-child {
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--thickhdr-theme-color);
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+}
+table.noborderW50 {
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  border-left-width: 1px;
+  border-left-style: none;
+  border-left-color: #000000;
+  border-top-width: 1px;
+  border-top-style: none;
+  border-top-color: #000000;
+  border-right-width: 1px;
+  border-right-style: none;
+  border-right-color: #000000;
+  border-bottom-width: 1px;
+  border-bottom-style: none;
+  border-bottom-color: #000000;
+  width: 50%;
+}
+table.noborderW50 td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999999;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #999999;
+}
+img.FloatLeft {
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-width: 1px;
+  border-style: none;
+  border-color: #000000;
+  border-left-width: 1px;
+  border-left-style: none;
+  border-left-color: #000000;
+  border-top-width: 1px;
+  border-top-style: none;
+  border-top-color: #000000;
+  border-right-width: 1px;
+  border-right-style: none;
+  border-right-color: #000000;
+  border-bottom-width: 1px;
+  border-bottom-style: none;
+  border-bottom-color: #000000;
+}
+a.glossterm:active {
+  font-style: italic;
+  color: #ffffff;
 }

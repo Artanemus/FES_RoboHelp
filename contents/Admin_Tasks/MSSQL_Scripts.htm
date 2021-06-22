@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <title>MSSQL Scripts</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
@@ -13,8 +13,11 @@
 </head>
 <body>
   <h4 style="border-width: 1px;border-style: none;border-color: #000000">Running a MSSQL Script to update your FES database.</h4>
-  <p>This section describes how to execute a SQL script to make changes to the schema of your FES database. </p>
-  <h4 style="border-width: 1px;border-style: none;border-color: #000000">Email Package V1.0.0.0</h4>
+  <p>This section describes how to execute a SQL script. </p>
+  <p>An example is given.</p>
+  <p>The developer sends two SQL scripts that must be executed within MSSMS. The emailed package is always called &#39;FES Pack FES_v###.zip&#39;. The FES_v### indicates the minium &#39;front-end&#39; version that can be run once the the changes are made. Running a version below this number may result in exception errors.</p>
+  <p> </p>
+  <h4 style="border-width: 1px;border-style: none;border-color: #000000">Emailed: FES Pack FES_v133.zip</h4>
   <p>You will recieve via email a &#39;Zipped&#39; file. Unpack this file.<span style="font-family:Segoe UI;"></span></p>
   <p>There are two files. Each file is a SQL &#39;Script&#39;. <span style="font-family:Segoe UI;"></span></p>
   <p> </p>
@@ -28,7 +31,7 @@
   <p>002_SystemDataIDFES_v1.sql</p>
   <ul>
     <li>The FES tables must exists. </li>
-    <li>This script populates the tables with esential core data.</li>
+    <li>This script populates the tables with essential core data.</li>
     <li>After it&#39;s executed, some of tables will contain records.</li>
     <li> </li>
   </ul>
@@ -40,7 +43,8 @@
     Connect to the SQL EXPRESS server.</p>
   <p> </p>
   <p>Expand the &#39;Databases&#39; branch in the &#39;Object Explorer&#39; window (left side of application)<br />
-    <img src="../assets/images/MSSMSconnect02.png" /></p>
+    <img src="../assets/images/MSSMSconnect02.png" />
+  </p>
   <p>Select the FES database.</p>
   <p> </p>
   <h5>NEXT</h5>
@@ -74,7 +78,7 @@
   <p>It produced a script which automatically ran, resulting in a table view of records in that table.</p>
   <p> </p>
   <h5>NEXT</h5>
-  <p>Glot in you new found knowledge and get ready for the next step - re-connecting and re-freshing the MS Access FES ACCDB</p>
+  <p>Re-Link the front-end.</p>
   <p> </p>
   <p> </p>
   <p> </p>

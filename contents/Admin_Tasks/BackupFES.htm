@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>BackupFES</title>
+  <meta name="topic-status" content="Draft" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/default.css" />
+  <meta name="rh-authors" content="Ben Ambrose" />
+  <meta name="template" content="../assets/masterpages/FES_MasterPage.htt" />
+</head>
+<body>
+  <h4>How to backup your SCM data.</h4>
+  <p class="BottomMargin">It important to schedule a regular backup of the data stored in <a class="glossterm" data-glossterm="Default_FES" href="#">FES</a>. You may very well keep years of historical data and it would be tragic to lose it.</p>
+  <p class="BottomMargin">Backup and restore of the<span> <a class="glossterm" data-glossterm="Default_FES" href="#">FES</a> </span>database is done with<span> </span><span>Microsoft&#39;s<span> </span><span>SQL Server Management Studio</span></span><span><span> </span>(<a class="glossterm" data-glossterm="Default_SSMS" href="#">SSMS</a>)</span></p>
+  <p class="BottomMargin">Run the application.</p>
+  <p class="BottomMargin">Connect to your<span> </span><a class="glossterm" data-glossterm="Default_MSSQL_EXPRESS" href="#">MSSQL EXPRESS</a> <a class="glossterm" data-glossterm="Default_FES" href="#">FES</a> database.</p>
+  <table border="1" cellpadding="1" cellspacing="1" class="noborderW50" style="border-collapse:collapse; width:100%">
+    <colgroup>
+      <col style="width:100%" />
+    </colgroup>
+    <tbody>
+      <tr>
+        <td><img class="FloatLeft" height="178" src="../assets/images/image2.png" width="203" />
+          <p class="BottomMargin">Expand<span> </span><span>Databases </span>in the Object Explorer panel by pressing its<span> </span><span><span>+</span></span><span> </span>symbol</p>
+          <p class="BottomMargin"> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><img class="FloatLeft" src="../assets/images/image3.png" />Hover over<span> </span><span><a class="glossterm" data-glossterm="Default_FES" href="#">FES</a> <span></span></span>and<span> </span><span>RIGHT-MOUSE</span><span> </span>click to show the context sensitive pop-up menu</p>
+          <p>Select the menu item<span> </span><span>Tasks</span>, then select<span> </span><span>Back Up ...</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td><img class="FloatLeft" src="../assets/images/image4.png" style="cursor: nwse-resize;" />
+          <p class="BottomMargin">Your back up settings should read ...</p>
+          <p class="BottomMargin">Database: <a class="glossterm" data-glossterm="Default_FES" href="#">FES</a> (in this instance, the database has been personalized and was named IDFES or Ipswich District Fire Equipment Services.)<br />
+            Backup type: Full<br />
+            Back up to: Disk</p>
+          <p class="BottomMargin">If a backup filename isn&#39;t listed, select a backup destination. </p>
+          <p class="BottomMargin">Press<span> </span><span>OK<span> </span></span>to begin the backup.</p>
+          <p class="BottomMargin">Note: in this example MSSMS places the backup file in the default backup directory. Typically this is : <br />
+            C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup</p>
+          <p class="BottomMargin">Your backup filename must use the extension .bak (Example: IDFES.bak)</p>
+          <p class="BottomMargin">Good pratice is to have three copies of your backup.</p>
+          <ul class="Disc">
+            <li class="BottomMargin">The default location on the DB server. (For easy access.) </li>
+            <li class="BottomMargin">In a safe place with-in the office or in the &#39;Cloud&#39;. (In case the server dies.)</li>
+            <li class="BottomMargin">And an external location. (In case your office is burnt-down or the &#39;Cloud&#39; goes down.)</li>
+          </ul>
+          <p class="BottomMargin">Depending on the amount of work done, good practise is to backup on a weekly scheduled.</p>
+          <p class="BottomMargin">It&#39;s possible to automate backups using a shell script. </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="BottomMargin"></p>
+</body>
+</html>

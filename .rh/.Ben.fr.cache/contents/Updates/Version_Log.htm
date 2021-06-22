@@ -9,6 +9,7 @@
     TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.
     TODO UI design for _InspectionOrders
     TODO UI change to _BrowseInspectionOrder. Make grid based.
+    DROP UseByDate in dbo.equipment
   
    
   MSSQL EXPRESS RELEASE
@@ -97,5 +98,22 @@
     REDESIGNED xDlgInspect_UpdateStat
     UPDATED SQL in _InspectionOrders AND UI re-design. (Included ID's for customer and site.)
     ADDED checkbox to include archived sites in xDlgSitePicker
+  
+  
+  ROBOHELP
+  
+    IMAGES added to 'How to update the Access front-end ... '.
+  
+  FES_V134.accdb
+  
+    ADDED Location to SF_InspectOrder_Equip
+    ADDED Location to SF_InspectOrder_Light
+    CREATED technician's inspection report and VBA.
+    CHANGED SF_InspectionOrderFind to GRID view.
+    CLEANED _InspectionOrders of OrderBy params to fit with GRID view in SF.
+    CREATED Customer's inspection report and VBA
+    FIXED vbNullString on aFIlterStr in ALL ParamChanged()
+    ADDED Technician's Light Inspection form to _Inspection
+    BUILT generic SF reports for Site, Cust, CustSite, Light and Equip
   
 

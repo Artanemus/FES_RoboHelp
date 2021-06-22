@@ -6,6 +6,7 @@
     <page navtitle="How to execute a MSSQL script" href="../contents/Admin_Tasks/MSSQL_Scripts.htm" format="html" processing-role="normal"></page>
     <page navtitle="How to refresh tables with Link Manager" href="../contents/Admin_Tasks/Link_Manager.htm" format="html" processing-role="normal"></page>
     <page navtitle="How to version-up the Access FES front-end.  " href="../contents/Admin_Tasks/Import_ODBC.htm" format="html" processing-role="normal"></page>
+    <page navtitle="How to backup your FES database" href="../contents/Admin_Tasks/BackupFES.htm" format="html" processing-role="normal"></page>
   </book>
   <book navtitle="Installation" format="html" processing-role="normal">
     <page navtitle="Setting up ODBC" href="../contents/Installation/ODBC.htm" format="html" processing-role="normal"></page>

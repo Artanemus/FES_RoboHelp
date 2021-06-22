@@ -22,6 +22,7 @@
     <li>TODO Empty station in site-equipment and site-lights need to handle correctly on NewRecord.</li>
     <li>TODO UI design for _InspectionOrders</li>
     <li>TODO UI change to _BrowseInspectionOrder. Make grid based.</li>
+    <li>DROP UseByDate in dbo.equipment</li>
   </ul>
   <p> </p>
   <h4>MSSQL EXPRESS RELEASE</h4>
@@ -112,11 +113,21 @@
     <li>ADDED checkbox to include archived sites in xDlgSitePicker</li>
   </ul>
   <p></p>
+  <h4>ROBOHELP</h4>
+  <ul class="Circle">
+    <li>IMAGES added to 'How to update the Access front-end ... '.</li>
+  </ul>
   <h4>FES_V134.accdb</h4>
   <ul class="Circle">
     <li>ADDED Location to SF_InspectOrder_Equip</li>
     <li>ADDED Location to SF_InspectOrder_Light</li>
-    <li>CREATED technician's inspection report and backend code.</li>
+    <li>CREATED technician's inspection report and VBA.</li>
+    <li>CHANGED SF_InspectionOrderFind to GRID view.</li>
+    <li>CLEANED _InspectionOrders of OrderBy params to fit with GRID view in SF.</li>
+    <li>CREATED Customer's inspection report and VBA</li>
+    <li>FIXED vbNullString on aFIlterStr in ALL ParamChanged()</li>
+    <li>ADDED Technician's Light Inspection form to _Inspection</li>
+    <li>BUILT generic SF reports for Site, Cust, CustSite, Light and Equip</li>
   </ul>
 </body>
 </html>
