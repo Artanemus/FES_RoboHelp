@@ -129,5 +129,70 @@
     <li>ADDED Technician's Light Inspection form to _Inspection</li>
     <li>BUILT generic SF reports for Site, Cust, CustSite, Light and Equip</li>
   </ul>
+  <p> </p>
+  <h4>MSSQL EXPRESS 25/6/2021</h4>
+  <ul class="Circle">
+    <li>010_RemoveCustomerDuplicity_in_IDFES.sql</li>
+  </ul>
+  <h4>ROBOHELP</h4>
+  <ul class="Circle">
+    <li>NEW ITEM 'How to backup back-end (MS SQL EXPRESS database).'.</li>
+  </ul>
+  <h4>FES_V135.accdb</h4>
+  <ul class="Circle">
+    <li>NEW BUTTON dbo_Customer - remove customer contact. (Just removes the reference - doesn't delete HR data) </li>
+    <li>FORCE IsArchived to false on before-new customer record in dbo_Customer.</li>
+    <li>ADDED CHECK IsEmpty(IsArchived) on before-update in dbo_Customer.</li>
+    <li>TRAP for existing customer contact in form Customer.</li>
+    <li>CLEAN un-implemented buttons in form SwitchBoard</li>
+    <li>CHANGED clean phone number algorithym - for new and updated records</li>
+  </ul>
+  <p></p>
+  <h4>FES_V136.accdb</h4>
+  <ul class="Circle">
+    <li>With the small amount of data entered by IDFES I was able to update the auto-build in form _Equipment.</li>
+    <li>ENHANCED form _Eqipment to append BRAND NAME to end of Short Caption (AutoBuild).</li>
+    <li>RE-FORMATTED - WEIGHT preceeds CHEMICAL TYPE for FX in Short Caption (AutoBuild).</li>
+    <li>ADDED formatting for F/B in Short Caption (AutoBuild).</li>
+    <li>FIXED AutoBuild strings for Emergency and Exit lamps for Customer description.</li>
+    <li>No Brand Names given in customers description for Auto-build ? </li>
+    <li>CHANGED SortOrder for equipment short description in for _Site</li>
+    <li>SET stack order for inspection status </li>
+    <li>PLACED current linked customer into find site and site forms</li>
+  </ul>
+  <p></p>
+  <h4>MSSQL EXPRESS ERStudio</h4>
+  <ul class="Circle">
+    <li>011_EquipPower_SiteIsManaged.sql</li>
+  </ul>
+  <h4>FES_V137.accdb</h4>
+  <ul class="Circle">
+    <li>TECH inspection report : Persisent office notes for stations now included.</li>
+    <li>TECH inspection report : Column order changed in SF.</li>
+    <li>TECH inspection report : Header printed on page 1 only.</li>
+    <li>TECH inspection report : re-design query for station historical notes.</li>
+    <li>New field - IsManaged in dbo_Site</li>
+    <li>New Field - Power in dbo_Station</li>
+    <li>GUI changes in _Equipment form</li>
+    <li>GUI changes in _Site .. Station .. Light</li>
+    <li>Assert tri-state field:IsManaged in dbo_Station</li>
+    <li>Preference message 'STATION IS EMPTY' for field:IsEmpty in field:Note </li>
+  </ul>
+  <p></p>
+  <h4>MSSQL EXPRESS ERStudio 13/07/2021</h4>
+  <ul class="Circle">
+    <li>012_LightFormFactor.sql</li>
+    <li>013_Light_incShortCaption.sql</li>
+    <li>014_EquipType_incShortCaption.sql</li>
+  </ul>
+  <h4>FES_V138.accdb</h4>
+  <ul class="Circle">
+    <li>ADDED Light form factor in dbo_Equipment.</li>
+    <li>ADDED ShortCaptions for equipment, lights.</li>
+    <li>EXTENDED code in AutoBuild caption in _Equipment Form</li>
+  </ul>
+
+
+
 </body>
 </html>
